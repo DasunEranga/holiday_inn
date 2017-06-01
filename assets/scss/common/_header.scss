@@ -1,0 +1,59 @@
+.navbar-inverse {
+    border-radius: 0 !important;
+    min-height: 80px !important;
+}
+
+.navbar-collapse {
+    float: right !important;
+    width: 85% !important;
+}
+
+.navbar-brand {
+    height: inherit !important;
+}
+
+.nav-bar-logo {
+    max-width: 72px !important;
+}
+
+.top-nav {
+    background-color: $green-3 !important;
+    p {
+        font-size: 12px;
+        padding-bottom: 0;
+    }
+    .left {}
+    .right {
+        p {
+            float: right;
+        }
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1200px) {
+    .top-nav {
+        .left {
+            p {
+                float: left;
+            }
+        }
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1200px) and (orientation:landscape) {}
+
+@media (max-width: 767px) {
+    .top-nav {
+        text-align: center;
+        .right {
+            p {
+                float: none;
+            }
+        }
+    }
+}
+
+@media (max-width: 767px) and (orientation:landscape) {}
+
+// mac 
+@media (max-width: 1280px) {}

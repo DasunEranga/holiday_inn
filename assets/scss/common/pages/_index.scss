@@ -1,0 +1,116 @@
+h2 {
+    @include heading1;
+    padding-bottom: 30px;
+}
+
+h3 {
+    @include heading3;
+}
+
+p {
+    @include paragraph;
+    padding-bottom: 30px;
+}
+
+.banner-wrapper {
+    padding-top: 90px;
+    padding-bottom: 30px;
+    .slider {
+        height: auto;
+        margin: 0 auto;
+        .item {
+            height: 400px;
+            width: 100%;
+            // height: 100%;
+            text-align: center;
+            margin: 0 auto;
+            background-size: cover;
+        }
+        h2 {
+            padding-top: 90px;
+        }
+    }
+    .reservation {
+        background: #222;
+        padding-bottom: 10px;
+        padding-top: 10px;
+    }
+    select {
+        width: 100%;
+        text-align: center;
+    }
+    input[type=date] {
+        width: 100%;
+    }
+    a {
+        @include primaryButton(15px 15px);
+        font-size: 11px !important;
+    }
+}
+
+.more-btn {
+    @include primaryButton(15 15);
+}
+
+.feature-wrapper {
+    .row-wrapper {
+        .article-wrapper {
+            padding-bottom: 30px;
+            img {
+                padding-bottom: 30px;
+            }
+        }
+    }
+}
+
+.banner-stripe-wrapper {
+    background: $gray-9;
+    h2 {
+        @include heading4;
+    }
+    h4 {
+        @include heading3;
+    }
+    p {
+        @include paragraph1;
+    }
+    .content-wrapper {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        .sec {
+            text-align: center;
+            margin: 0 auto;
+        }
+    }
+}
+
+.map-t {
+    height: 300px;
+}
+
+@media (min-width: 768px) and (max-width: 1200px) {
+    .feature-wrapper {
+        .row-wrapper {
+            .article-wrapper {
+                text-align: center;
+            }
+        }
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1200px) and (orientation:landscape) {}
+
+@media (max-width: 767px) {
+    .feature-wrapper {
+        .row-wrapper {
+            .article-wrapper {
+                text-align: center;
+            }
+        }
+    }
+}
+
+@media (max-width: 767px) and (orientation:landscape) {}
+
+// mac 
+@media (max-width: 1280px) {}

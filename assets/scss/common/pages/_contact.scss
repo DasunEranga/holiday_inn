@@ -1,0 +1,74 @@
+h3 {
+    @include heading4;
+}
+
+p {
+    @include paragraph1;
+}
+
+.map-wrapper {
+    padding-top: 120px;
+    padding-bottom: 60px;
+}
+
+.contact-wrapper {
+    padding-bottom: 30px;
+}
+
+.dwn-btn-wrapper {
+    padding-top: 30px;
+    .dwn-btn {
+        @include primaryButton(15 15);
+    }
+}
+
+.sub-btn-wrapper {
+    padding-top: 5px;
+    .sub-btn {
+        @include primaryButton(15 15);
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1200px) {
+    .contact-wrapper {
+        .left {
+            padding-bottom: 30px;
+        }
+    }
+    .map-wrapper {
+        padding-top: 160px;
+    }
+}
+
+.map-t {
+    height: 300px;
+}
+
+@media (min-width: 768px) and (max-width: 1200px) and (orientation:landscape) {}
+
+@media (max-width: 767px) {
+    .contact-wrapper {
+        .dwn-btn,
+        .sub-btn {
+            width: 100%;
+            text-align: center
+        }
+        .left {
+            padding-bottom: 30px;
+        }
+    }
+    .contact-wrapper {
+        .left {
+            padding-bottom: 30px;
+        }
+    }
+    .map-wrapper {
+        padding-top: 160px;
+        padding-bottom: 20px;
+    }
+}
+
+@media (max-width: 767px) and (orientation:landscape) {}
+
+// mac 
+@media (max-width: 1280px) {}
