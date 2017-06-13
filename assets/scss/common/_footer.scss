@@ -1,5 +1,10 @@
 .footer-wrapper {
     background: #222;
+    .footer-sec {
+        ul {
+            padding: 0;
+        }
+    }
     .content-wrapper {
         padding-top: 30px;
         padding-bottom: 30px;

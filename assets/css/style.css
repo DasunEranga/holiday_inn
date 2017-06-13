@@ -367,10 +367,16 @@ select::-ms-expand {
   .top-nav p {
     font-size: 12px;
     padding-bottom: 0; }
+  .top-nav .left {
+    padding: 0; }
   .top-nav .right p {
     float: right; }
+  .top-nav .top-menu-wrapper {
+    padding: 0; }
 
 @media (min-width: 768px) and (max-width: 1200px) {
+  .top-nav div {
+    padding: 0 !important; }
   .top-nav .left p {
     float: left; } }
 @media (max-width: 767px) {
@@ -380,6 +386,8 @@ select::-ms-expand {
       float: none; } }
 .footer-wrapper {
   background: #222; }
+  .footer-wrapper .footer-sec ul {
+    padding: 0; }
   .footer-wrapper .content-wrapper {
     padding-top: 30px;
     padding-bottom: 30px; }
@@ -454,7 +462,7 @@ p {
   padding-bottom: 30px; }
 
 .banner-wrapper {
-  padding-top: 90px;
+  padding-top: 100px;
   padding-bottom: 30px; }
   .banner-wrapper .slider {
     height: auto;
