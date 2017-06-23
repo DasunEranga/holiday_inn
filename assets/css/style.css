@@ -364,11 +364,17 @@ select::-ms-expand {
 
 .top-nav {
   background-color: #8dbb06 !important; }
+  .top-nav .content {
+    padding: 0; }
   .top-nav p {
     font-size: 12px;
     padding-bottom: 0; }
-  .top-nav .right p {
-    float: right; }
+  .top-nav .left {
+    padding: 0; }
+  .top-nav .right {
+    padding: 0; }
+    .top-nav .right p {
+      float: right; }
 
 @media (min-width: 768px) and (max-width: 1200px) {
   .top-nav .left p {
@@ -471,6 +477,9 @@ p {
     background: #222;
     padding-bottom: 10px;
     padding-top: 10px; }
+    .banner-wrapper .reservation .txt-box {
+      height: 40px;
+      padding-left: 15px; }
   .banner-wrapper select {
     width: 100%;
     text-align: center; }

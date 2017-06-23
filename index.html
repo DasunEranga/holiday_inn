@@ -8,21 +8,28 @@
     <link rel="stylesheet" type="text/css" href="./assets/css/slick.css">
     <link rel="stylesheet" type="text/css" href="./assets/css/slick-theme.css">
     <link rel="stylesheet" type="text/css" href="./assets/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="./assets/css/datepicker.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+
 </head>
 
 <body>
     <header>
         <nav class="navbar navbar-inverse navbar-fixed-top nav-main text-uppercase">
-            <div class="top-nav col-xs-12 col-md-12">
-                <div class="left col-xs-12 col-md-6">
-                    <p>Lorem Ipsum is simply dummy text</p>
-                </div>
-                <div class="right col-xs-12 col-md-6">
-                    <p>xxxx xxx xxxx | <a href="mailto:test@email.com">test@email.com</a></p>
+            <div class="top-nav">
+                <div class="container">
+                    <div class="content col-xs-12 col-md-12">
+                        <div class="left col-xs-12 col-md-6">
+                            <p>Lorem Ipsum is simply dummy text</p>
+                        </div>
+                        <div class="right col-xs-12 col-md-6">
+                            <p>xxxx xxx xxxx | <a href="mailto:test@email.com">test@email.com</a></p>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="container-fluid nav-item-wrapper">
+            <div class="container nav-item-wrapper">
                 <!-- small size devices collapse button -->
                 <div class="navbar-header">
                     <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#mobile-menu-expand" aria-expanded="false">
@@ -79,36 +86,45 @@
                         <div class="container">
                             <form class="form-inline">
                                 <div class="form-group col-md-2">
-                                    <label for="Arrival" class="sr-only">Arrival</label>
-                                    <input type="date" name="" value="">
+                                    <div class="input-group">
+                                        <input class="datepicker form-control txt-box" type="text" name="date" value="">
+                                        <span class="input-group-addon">
+                        <span class="glyphicon glyphicon-calendar"></span>
+                                        </span>
+                                    </div>
                                 </div>
                                 <div class="form-group col-md-2">
-                                    <label for="Departure" class="sr-only">Departure</label>
-                                    <input type="date" name="" value="" placeholder="Departure Date">
+
+                                    <div class="input-group">
+                                        <input class="datepicker form-control txt-box" type="text" name="date" value="">
+                                        <span class="input-group-addon">
+                        <span class="glyphicon glyphicon-calendar"></span>
+                                        </span>
+                                    </div>
                                 </div>
                                 <div class="form-group col-md-2">
-                                    <select>
+                                    <select class="txt-box">
                                         <option value="">Number of Adult</option>
                                         <option value="">1</option>
                                         <option value="">2</option>
                                     </select>
                                 </div>
                                 <div class="form-group col-md-2">
-                                    <select>
+                                    <select class="txt-box">
                                         <option value="">Number of Children</option>
                                         <option value="">1</option>
                                         <option value="">2</option>
                                     </select>
                                 </div>
                                 <div class="form-group col-md-2">
-                                    <select>
+                                    <select class="txt-box">
                                         <option value="">Number of Rooms</option>
                                         <option value="">1</option>
                                         <option value="">2</option>
                                     </select>
                                 </div>
                                 <div class="form-group col-md-2">
-                                    <a href="#" class="res-btn">Make Reservations</a>
+                                    <a href="#" class="res-btn txt-box">Make Reservations</a>
                                 </div>
                             </form>
                         </div>
@@ -201,7 +217,20 @@
                     </div>
                 </div>
             </div>
+
+
         </section>
+
+        <div class="container">
+            <div class="col-md-2">
+                <div data-provide="datepicker" class="input-group">
+                    <input class="datepicker form-control" type="text" name="date" value="">
+                    <span class="input-group-addon">
+                        <span class="glyphicon glyphicon-calendar"></span>
+                    </span>
+                </div>
+            </div>
+        </div>
 
         <!--banner stripe-->
         <section>
@@ -228,6 +257,9 @@
         <section>
             <div id="map" class="map-t"></div>
         </section>
+
+
+
     </main>
     <footer>
         <div class="footer-wrapper">
@@ -287,7 +319,9 @@
     </footer>
     <script src="./assets/js/jquery.min.js"></script>
     <script src="./assets/js/bootstrap.min.js"></script>
+    <script src="./assets/js/bootstrap-datepicker.js"></script>
     <script src="./assets/js/slick.min.js"></script>
+
 
     <script type="text/javascript">
         (function(document, window, $) {
@@ -347,6 +381,11 @@
         }
     </script>
     <script async defer src="https://maps.googleapis.com/maps/api/js?AIzaSyClkFQFjjO0u_l0U2mEn2ZI2hs0sQn-5N8&callback=initMap">
+    </script>
+    <script>
+        $(function name(params) {
+            $('.datepicker').datepicker()
+        });
     </script>
 </body>
 
